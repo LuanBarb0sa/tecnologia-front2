@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form id="formulario">
+        <label for="name">Nome:</label>
+        <input type="text" name="name" id="name" required>
+
+        <label for="idade">Idade:</label>
+        <input type="text" name="idade" id="idade">
+
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email" required>
+
+        <label for="mIdade">Maior de Idade:</label>
+        <input type="radio" name="mIdade" id="mIdade">
+
+        <label for="">Deseja receber newsletter:</label>
+        <input id="checkbox" class="newsletter" type="checkbox" unchecked />
+
+        <label for="msg">Mensagem:</label>
+        <textarea name="msg" id="msg"></textarea>
+
+        <button id="btnEnviar" onclick="enviarForm()">Enviar</button>
+        <button id="btnLimpar" class="btn-limpar" onclick="limparForm()">Limpar</button>
+    </form>
+    <script src="./main.js"></script>
+</body>
+</html>
